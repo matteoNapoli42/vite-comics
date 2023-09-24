@@ -2,11 +2,11 @@
 </script>
 
 <template>
-    <header class="d-flex justify-content-between px-1">
+    <header class="d-flex justify-content-between container">
         <div class="py-3">
             <img src=".././assets/img/dc-logo.png" alt="" style="height: 86px;">
         </div>
-        <div class="py-5">
+        <div class="py-5 px-3">
             <ul class="d-flex gap-4">
                 <li>
                     <a href="">Characters</a>
@@ -50,5 +50,6 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 </style>
