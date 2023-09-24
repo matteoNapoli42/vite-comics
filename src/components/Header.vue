@@ -2,50 +2,53 @@
 </script>
 
 <template>
-    <header>
-        <div class="d-flex headerContent">
-            <div id="logoZone"><img src=".././assets/img/dc-logo.png" alt="" style="height: 86px;"></div>
-            <div id="navBarZone" class="d-flex">
-
-                <a href="">Characters</a>
-                <a href="">Comics</a>
-                <a href="">Movies</a>
-                <a href="">TV</a>
-                <a href="">Games</a>
-                <a href="">Collectibles</a>
-                <a href="">Videos</a>
-                <a href="">Fans</a>
-                <a href="">News</a>
-                <a href="">Shop</a>
-
-            </div>
+    <header class="d-flex justify-content-between px-1">
+        <div class="py-3">
+            <img src=".././assets/img/dc-logo.png" alt="" style="height: 86px;">
+        </div>
+        <div class="py-5">
+            <ul class="d-flex gap-4">
+                <li>
+                    <a href="">Characters</a>
+                </li>
+                <li>
+                    <a href="">Comics</a>
+                </li>
+                <li>
+                    <a href="">Movies</a>
+                </li>
+                <li>
+                    <a href="">TV</a>
+                </li>
+                <li>
+                    <a href="">Games</a>
+                </li>
+                <li>
+                    <a href="">Collectibles</a>
+                </li>
+                <li>
+                    <a href="">Videos</a>
+                </li>
+                <li>
+                    <a href="">Fans</a>
+                </li>
+                <li>
+                    <a href="">News</a>
+                </li>
+                <li>
+                    <a href="">Shop</a>
+                </li>
+            </ul>
         </div>
     </header>
 </template>
 
 <style scoped>
-header {
-    height: 118px;
-    width: 100%;
+ul {
+    list-style: none;
 }
 
-.headerContent {
-    width: 80%;
-    margin: auto;
-}
-
-#logoZone {
-    width: 50%;
-    padding-top: 10px;
-}
-
-#navBarZone {
-    width: 50%;
-    justify-content: space-around;
-    padding-top: 50px
-}
-
-.d-flex {
-    display: flex;
+a {
+    text-decoration: none;
 }
 </style>
