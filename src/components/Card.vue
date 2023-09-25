@@ -91,11 +91,21 @@ import Comic from "./Comic.vue"
 
     <section id="series">
         <div class="container">
+            <div class="col-2 bg-primary p-2">
+                <h5 class="text-white ">CURRENT SERIES</h5>
+            </div>
             <div class="row d-flex flex-wrap">
                 <Comic v-for="elem in comicsArray" :thumb="elem.thumb" :price="elem.price" :series="elem.series"
                     :type="elem.type" />
             </div>
+            <div class="row justify-content-center py-3">
+                <div class="col-3 d-flex ">
+                    <button class=" btn btn-primary ">
+                        LOAD MORE
+                    </button>
+                </div>
 
+            </div>
         </div>
     </section>
 </template>

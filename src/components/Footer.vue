@@ -56,7 +56,9 @@
     <section id="lowerFooter">
         <div class="container d-flex py-4">
             <div class=" col-6">
-                <a href="">SIGN-UP NOW</a>
+                <button class="btn btn-outline-primary text-white">
+                    SING-UP NOW!
+                </button>
             </div>
             <div class="col-6 d-flex justify-content-end gap-3 align-items-center">
                 <h5 style="color: #0481f9ff ;">FOLLOW US</h5>

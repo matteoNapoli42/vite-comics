@@ -4,7 +4,7 @@ export default {
         thumb: String,
         price: String,
         series: String,
-        type: String
+        type: String,
     }
 }
 </script>
