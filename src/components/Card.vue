@@ -91,8 +91,8 @@ import Comic from "./Comic.vue"
 
     <section id="series">
         <div class="container">
-            <div class="col-2 bg-primary p-2">
-                <h5 class="text-white ">CURRENT SERIES</h5>
+            <div class="col-2 bg-primary p-2 bannerPosition">
+                <h5 class="text-white text-center">CURRENT SERIES</h5>
             </div>
             <div class="row d-flex flex-wrap">
                 <Comic v-for="elem in comicsArray" :thumb="elem.thumb" :price="elem.price" :series="elem.series"
@@ -114,6 +114,11 @@ import Comic from "./Comic.vue"
 #jumbotron {
     background-image: url("../assets/img/jumbotron.jpg");
     height: 408px;
+}
+
+.bannerPosition {
+    position: absolute;
+    top: 52%;
 }
 
 #series {
