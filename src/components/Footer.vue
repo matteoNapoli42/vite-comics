@@ -1,53 +1,70 @@
 <script>
+export default {
+    data() {
+        return {
+            footerVoices: [
+                {
+                    title: "DC COMICS",
+                    groupVoices: [
+                        "Characters",
+                        "Comics",
+                        "Movies",
+                        "TV",
+                        "Games",
+                        "Videos",
+                        "News"
+                    ]
+                },
 
+                {
+                    title: "SHOP",
+                    groupVoices: [
+                        "Shop DC",
+                        "Shop DC Collectibles",
+                    ]
+                },
+
+                {
+                    title: "DC",
+                    groupVoices: [
+                        "Terms of Use",
+                        "Privacy policy (New)",
+                        "Ad Choices",
+                        "Advertising",
+                        "Jobs"
+                    ]
+                },
+
+                {
+                    title: "SITES",
+                    groupVoices: [
+                        "DC",
+                        "MAD Magazine",
+                        "DC Kids",
+                        "DC Universe",
+                        "DC Power Visa"
+                    ]
+                }
+            ]
+        }
+    }
+
+}
 </script>
 
 <template>
     <!--UpperFooter-->
     <section class="px-0" id="upperFooter">
         <div class="d-flex container">
-            <div class="col-6 d-flex gap-2 py-5">
-                <div class="col-3">
+            <div class="col-6 d-flex gap-0 py-5">
+                <div class="col-3" v-for="(elem, index) in footerVoices">
+                    <h5>{{ elem.title }}</h5>
                     <ul>
-                        <h5>DC COMICS</h5>
-                        <li><a href="">Characters</a></li>
-                        <li><a href="">Comics</a></li>
-                        <li><a href="">Movies</a></li>
-                        <li><a href="">TV</a></li>
-                        <li><a href="">Games</a></li>
-                        <li><a href="">Videos</a></li>
-                        <li><a href="">News</a></li>
-                    </ul>
-
-                    <ul>
-                        <h5>SHOP</h5>
-                        <li><a href="">Shop DC</a></li>
-                        <li><a href="">Shop DC Collectibles</a></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul>
-                        <h5>DC</h5>
-                        <li><a href="">Terms Of Use</a></li>
-                        <li><a href="">Privacy policy(New)</a></li>
-                        <li><a href="">Ad Choices</a></li>
-                        <li><a href="">Advertising</a></li>
-                        <li><a href="">Jobs</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul>
-                        <h5>SITES</h5>
-                        <li><a href="">DC</a></li>
-                        <li><a href="">MAD Magazine</a></li>
-                        <li><a href="">DC Kids</a></li>
-                        <li><a href="">DC Universe</a></li>
-                        <li><a href="">DC Power Visa</a></li>
+                        <li v-for="voice in footerVoices[index].groupVoices"><a href="">{{ voice }}</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-6" id="prova">
+            <div class="col-6" id="bigLogo">
 
             </div>
         </div>
@@ -96,7 +113,7 @@ a {
     color: grey;
 }
 
-#prova {
+#bigLogo {
     background: url("../assets/img/dc-logo-bg.png");
     background-repeat: no-repeat;
     background-position: right;
